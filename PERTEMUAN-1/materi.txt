@@ -1,2 +1,86 @@
-Materi Pertemuan 1
-1. Belajar dasar GIT Hub
+GitHub Dasar & Kolaborasi (Fork)
+================================
+
+1. Apa itu GitHub?
+-------------------
+GitHub adalah tempat menyimpan dan mengelola kode secara online, serta bekerja sama dengan orang lain.
+
+2. Cara Daftar
+--------------
+1. Buka https://github.com
+2. Klik Sign up
+3. Isi email, username, password
+4. Verifikasi email
+
+3. Membuat Repository
+---------------------
+1. Klik + → New repository
+2. Isi nama repo
+3. (Opsional) Centang "Add README"
+4. Klik Create
+
+4. Perintah Git Dasar
+---------------------
+git clone <url>           # Ambil repo dari GitHub
+git add .                 # Tambah semua perubahan
+git commit -m "pesan"     # Simpan perubahan lokal
+git push origin main      # Kirim ke GitHub
+
+5. GitHub Codespaces
+---------------------
+- Fitur coding langsung di browser
+- Klik Code → Codespaces → Create codespace
+- Seperti VS Code online, tidak perlu install apa pun
+
+6. Kolaborasi lewat Fork
+-------------------------
+Apa itu Fork?
+- Menyalin repo orang lain ke akun kita untuk dimodifikasi sendiri.
+
+Langkah-langkah:
+1. Klik tombol Fork di repo orang lain
+2. Repo akan tersalin ke akunmu
+3. Clone repo hasil fork:
+   git clone https://github.com/kamu/nama-repo.git
+4. Buat perubahan → commit → push
+5. Buka GitHub → klik Pull Request
+6. Ajukan perubahan ke repo asli
+
+7. Sinkronisasi dengan Repo Asli
+---------------------------------
+Jika repo asli berubah, tarik pembaruannya dengan:
+
+git remote add upstream https://github.com/orang-lain/repo.git
+git fetch upstream
+git merge upstream/main
+
+Inti Penting
+-------------
+Fitur         | Fungsi
+------------- | ------------------------------------------
+Repo          | Tempat menyimpan kode
+Fork          | Gandakan repo ke akun sendiri
+Pull Request  | Ajukan perubahan ke repo asli
+Codespaces    | Coding langsung di browser
+
+
+---------------------------------
+Praktek
+---------------------------------
+1. Forg repo https://github.com/restu-dev/district-pia/
+
+2. Buka https://github.com/codespaces
+   Tambahkan repo untuk dibuka
+
+3. Didalam Folder Petemuan 1
+   - Buat Folder nama
+   - Didalam Folder nama buat file index.html
+   - commit : - git add .
+              - git commit -m "nama - add index html"
+              - git push origin main
+
+4. buka repo yg di forg tadi digithub kamu.
+   - Contribute -> Open Pull Request -> Create Pull Request
+
+5. Sebagai pemilik Repo main
+   - Pull Requests -> Merge pull request -> Confirm merge

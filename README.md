@@ -4,7 +4,7 @@ Latihan dasar pengembangan frontend untuk siswa ekskul pemrograman menggunakan H
 
 ## Materi
 
-- :zap Dasar Git Hub
+- 💾 Dasar Git Hub
 - 📄 Struktur dasar HTML
 - 🎨 Dasar-dasar CSS
 - 🎛️ Komponen dasar Bootstrap
